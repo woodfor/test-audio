@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/lib/WebAudioRecorder.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>Header Tag</title>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Audio test</h1>
+        <p id="status">Press "record" to start record</p>
+        <button id="record" onclick="toggleRecording(this);">record</button>
+        <br />
+        <select id="encodingTypeSelect" onclick="toogleDownloadLink(this);">
+          <option value="wav">Waveform Audio (.wav)</option>
+          <option value="mp3">MP3 (MPEG-1 Audio Layer III) (.mp3)</option>
+          <option value="ogg">Ogg Vorbis (.ogg)</option>
+        </select>
+        <br />
+        <a id="download" href="#" hidden> download </a>
+      </header>
+    </article>
+    <script></script>
+  </body>
+</html>
